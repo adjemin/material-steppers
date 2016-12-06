@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E9E9E"
+    >
+    <LinearLayout
+        android:id="@+id/stepper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E0E0E0"
+        android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/stepLevelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 4 of 6"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+    <com.adjemin.materialsteppers.view.NonSwipeableViewPager
+        android:id="@+id/stepViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stepper"
+        >
+
+    </com.adjemin.materialsteppers.view.NonSwipeableViewPager>
+
+    <RelativeLayout
+        android:id="@+id/stepperController"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#E0E0E0"
+        android:padding="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_button_title"
+            android:textColor="@android:color/black"
+            android:drawableLeft="@drawable/ic_chevron_left_black_18dp"
+            android:id="@+id/stepBack"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button_title"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_chevron_right_black_18dp"
+            android:id="@+id/stepNext"
+            />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

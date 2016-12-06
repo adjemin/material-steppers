@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Library</string>
+    
+    <string name="completed_button_title">TERMINER</string>
+    <string name="next_button_title">SUIVANT</string>
+    <string name="back_button_title">PREC</string>
+
+    <string name="text_stepper_level">Etape %1$s sur %2$s</string>
+</resources>
